@@ -1,3 +1,4 @@
+/* Universal */
 *
 {
     margin: 0;
@@ -8,52 +9,56 @@
     user-select: none;
 }
 
+
+/* Body */
 body
 {
     background-color: var(--body-background-color);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
+/* List Elements */
 li
 {
     list-style: none;
 }
 
+/* Links */
 a
 {
     font-family: var(--links-font);
     text-decoration: none;
 }
 
+/* Buttons */
 button
 {
     cursor: pointer;
 }
 
-header,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
+/* Headings */
+header, h1, h2, h3, h4, h5, h6
 {
     font-family: var(--headings-font);
 }
 
+/* Paragraphs */
 p
 {
     font-family: var(--paragraphs-font);
 }
 
+/* Section */
+
+/* All Sections */
 section
 {
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 100vh;
+    min-height: 100vh;
+    text-align: center;
 }
 
+/* Images & Videos */
 img,
 video
 {

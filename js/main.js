@@ -1,6 +1,6 @@
 const mobileMenuToggleBtn = document.getElementById('mobile_menu_toggle_btn')
 const mainNav = document.getElementById('main_nav')
-const slides = document.querySelectorAll('.slide')
+const slides = document.querySelectorAll('.hero-slide')
 const heroPrevSlideBtn = document.getElementById('hero_prev_slide_btn')
 const heroNextSlideBtn = document.getElementById('hero_next_slide_btn')
 
@@ -10,7 +10,6 @@ const heroNextSlideBtn = document.getElementById('hero_next_slide_btn')
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 heroPrevSlideBtn.addEventListener('click', previousSlide)
 heroNextSlideBtn.addEventListener('click', nextSlide)
-
 
 
 // FUNCTIONS //
@@ -64,3 +63,4 @@ function nextSlide()
         slides[0].classList.add('current')
     }
 }
+

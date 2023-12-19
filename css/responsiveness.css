@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px)
+{
+    .content.slide-content
+    {
+        max-width: 600px;
+
+        border-radius: 0 calc(var(--base-border-radius) / 1.5) calc(var(--base-border-radius) / 1.5) 0;
+    }
+
+    /* Gallery */
+    .container.gallery-container div h2
+    {
+        top: 50%;
+    }
+
+    .container.gallery-container div:hover h2
+    {
+        top: 50%;
+        transition: top .3s ease-in;
+    }
+}

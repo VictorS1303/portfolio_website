@@ -99,6 +99,7 @@ section.hero .container.slider-container
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    z-index: 4;
 }
 
 .slide
@@ -149,12 +150,13 @@ section.hero .container.slider-container
     border-bottom: 2px solid var(--primary-color);
     width: fit-content;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 .slide .content.slide-content p.slider-desc
 {
     font-family: var(--paragraphs-font);
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
     margin-top: 20px;
 }
@@ -218,3 +220,9 @@ section.hero .container.slider-btns-container .btn:active
     transform: scale(.98);
     transition: none;
 }
+
+
+/* Section: Theme #2 */
+
+
+/* Footer */
