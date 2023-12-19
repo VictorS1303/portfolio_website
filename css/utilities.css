@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+
+
 :root
 {
+    /* Fonts */
+    --headings-font: 'Oswald', sans-serif;
+    --paragraphs-font: 'Open Sans', sans-serif;
+    --links-font: 'Open Sans', sans-serif;
+
     /* Colors */
     --primary-color: #008080;
     --secondary-color: #fff;
@@ -13,4 +22,20 @@
 
     /* Overlay */
     --overlay-background-color: rgba(0, 0, 0, .4);
+}
+
+/* Buttons */
+.btn
+{
+    cursor: pointer;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--overlay-background-color);
+    height: 100vh;
+    width: 100vw;
 }
