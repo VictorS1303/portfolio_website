@@ -1,5 +1,7 @@
 @media screen and (min-width: 768px)
 {
+
+    /* Slider */
     .content.slide-content
     {
         max-width: 600px;
@@ -17,5 +19,24 @@
     {
         top: 50%;
         transition: top .3s ease-in;
+    }
+
+    /* Click Indicator */
+    section.hero .layer.top-layer .container.tap-screen-indicator-container,
+    section.hero .layer.top-layer .container.tap-screen-indicator-container i
+    {
+        font-size: 20px;
+    }
+
+    /* Layers */
+    section.hero h1:not(.slider-header)
+    {
+        font-size: 8rem;
+    }
+
+    .bottom-layer h1
+    {
+        font-size: 20px;
+        z-index: 10;
     }
 }

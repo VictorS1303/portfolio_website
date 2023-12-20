@@ -1,0 +1,32 @@
+@keyframes click
+{
+
+    0%,
+    50%,
+    100%
+    {
+        transform: scale(1)
+    }
+
+    25%,
+    75%
+    {
+        transform: scale(.8);
+    }
+}
+
+
+@keyframes fadeInDown
+{
+    0%
+    {
+        top: -20px;
+        opacity: 0;
+    }
+
+    100%
+    {
+        top: 0;
+        opacity: 1;
+    }
+}

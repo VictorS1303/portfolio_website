@@ -1,16 +1,16 @@
 const mobileMenuToggleBtn = document.getElementById('mobile_menu_toggle_btn')
 const mainNav = document.getElementById('main_nav')
-const slides = document.querySelectorAll('.hero-slide')
-const heroPrevSlideBtn = document.getElementById('hero_prev_slide_btn')
-const heroNextSlideBtn = document.getElementById('hero_next_slide_btn')
+
+const topLayer = document.getElementById('top_layer')
+const animationHeaderSpans = document.querySelectorAll('.animation-header > span')
 
 
+console.log(animationHeaderSpans)
 
 // EVENT LISTENERS //
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
-heroPrevSlideBtn.addEventListener('click', previousSlide)
-heroNextSlideBtn.addEventListener('click', nextSlide)
-
+topLayer.addEventListener('click', hideTopLayer)
+// topLayer.addEventListener('pointerout', revealTopLayer)
 
 // FUNCTIONS //
 
@@ -30,37 +30,23 @@ function updateMobileMenuToggleIcon()
         : (mobileMenuToggleBtn.classList.add('fa-bars'), mobileMenuToggleBtn.classList.remove('fa-times'))
 }
 
-// FUNCTIONS //
-
-// Previous Slide
-function previousSlide()
+function hideTopLayer()
 {
-    const currentSlide = document.querySelector('.current')
-    currentSlide.classList.remove('current')
+    topLayer.classList.add('hidden')
 
-    if (currentSlide.previousElementSibling)
+    if (topLayer.classList.contains('hidden'))
     {
-        currentSlide.previousElementSibling.classList.add('current')
-    }
-    else
-    {
-        slides[slides.length - 1].classList.add('current')
+        animationHeaderSpans.forEach((animationHeaderSpan) =>
+        {
+            setTimeout(() =>
+            {
+                animationHeaderSpan.style.animationPlayState = 'running'
+            }, 400)
+        })
     }
 }
 
-// Next Slide
-function nextSlide()
-{
-    const currentSlide = document.querySelector('.current')
-    currentSlide.classList.remove('current')
-
-    if (currentSlide.nextElementSibling)
-    {
-        currentSlide.nextElementSibling.classList.add('current')
-    }
-    else
-    {
-        slides[0].classList.add('current')
-    }
-}
-
+// function revealTopLayer()
+// {
+//     topLayer.classList.remove('hidden')
+// }
