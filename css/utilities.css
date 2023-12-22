@@ -33,6 +33,11 @@
     --overlay-background-color: rgba(0, 0, 0, .4);
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 .overlay
 {
     position: absolute;
@@ -142,6 +147,45 @@
 .secondary-btn .secondary-btn-hover-overlay
 {
     background-color: var(--secondary-btn-hover-overlay-color);
+}
+
+/* Scroll To Top Button */
+.scroll-to-top-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #fff;
+    color: var(--secondary-btn-background-color);
+    z-index: 6000;
+    box-shadow: var(--box-shadow);
+    transition: right .3s ease-in, color .15s ease-in, background .15s ease-in;
+}
+
+.scroll-to-top-btn.active
+{
+    right: 20px;
+    transition: right .3s ease-in;
+}
+
+.scroll-to-top-btn:hover
+{
+    color: var(--primary-btn-hover-text-color);
+    background-color: var(--primary-btn-color);
+    transition: color .15s ease-in, background .15s ease-in;
+}
+
+.scroll-to-top-btn:active
+{
+    transform: scale(.98);
+    transition: none;
 }
 
 /* Section */

@@ -1,5 +1,6 @@
 const mobileMenuToggleBtn = document.getElementById('mobile_menu_toggle_btn')
 const mainNav = document.getElementById('main_nav')
+const scrollToTopBtn = document.getElementById('scroll_to_top_btn')
 
 const topLayer = document.getElementById('top_layer')
 const animationHeaderSpans = document.querySelectorAll('.animation-header > span')
@@ -9,6 +10,8 @@ const animationHeaderVideo = document.getElementById('animation_header_video')
 
 
 // EVENT LISTENERS //
+window.addEventListener('scroll', toggleScrollToTopBtn)
+scrollToTopBtn.addEventListener('click', scrollToTop)
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 topLayer.addEventListener('click', hideTopLayer)
 
@@ -78,4 +81,19 @@ function runHeaderAnimation()
             contentHeaderSpan.style.animationPlayState = 'running'
         }, 500)
     })
+}
+
+
+// Toggle Scroll To Top Btn
+function toggleScrollToTopBtn()
+{
+    window.scrollY > 500
+        ? scrollToTopBtn.classList.add('active')
+        : scrollToTopBtn.classList.remove('active')
+}
+
+// Scroll To Top
+function scrollToTop()
+{
+    window.scrollTo(0, 0)
 }
