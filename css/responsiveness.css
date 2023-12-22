@@ -1,6 +1,40 @@
 @media screen and (min-width: 768px)
 {
 
+    /* Nav bar */
+    i.fas.fa-bars
+    {
+        display: none;
+    }
+
+    nav.main-nav
+    {
+        left: 0;
+        width: 100%;
+        height: 70px;
+        border-left: none;
+        border-bottom: 3px solid var(--primary-border-color);
+    }
+
+
+
+    nav.main-nav ul
+    {
+        position: relative;
+        top: 70%;
+    }
+
+    nav.main-nav ul li
+    {
+        display: inline-block;
+    }
+
+    nav.main-nav ul li:not(:last-child)
+    {
+        margin-right: 40px;
+    }
+
+
     /* Slider */
     .content.slide-content
     {
