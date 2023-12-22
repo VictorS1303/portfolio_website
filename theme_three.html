@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/responsiveness.css">
+    <link rel="stylesheet" href="css/animations.css">
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
     <title>Portfolio | Tema #3</title>
@@ -40,6 +41,194 @@
         </ul>
     </nav>
 
+
+    <main>
+        <section class="hero theme-hero theme-three-hero" id="theme_three_hero">
+            <div class="layer top-layer" id="top_layer">
+                <h1 class="header theme-header theme-three-header">TEMA #3</h1>
+
+                <div class="container tap-screen-indicator-container">
+                    <h3>Click</h3> <i class="fa-solid fa-arrow-pointer"></i>
+                </div>
+            </div>
+            <div class="layer bottom-layer" id="bottom_layer">
+                <h1 class="theme-header web-header" id="web_header">
+                    <span class="web-theme-header-letter">W</span>
+                    <span class="web-theme-header-letter">E</span>
+                    <span class="web-theme-header-letter">B</span>
+                </h1>
+
+                <div class="container video-container">
+                    <div class="overlay"></div>
+                    <img src="images/theme_two/theme_two_header.webp" alt="study start test">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Overview -->
+        <section class="theme-three-overview" id="theme-three-overview">
+            <header class="header section-header">
+                <h1>Tema #3 - <span class="sub-text header-sub-text">UX/UI</span></h1>
+            </header>
+
+            <p class="text theme-overview-text">
+                I dette tema lærte vi om principper som forskellige typer af research og idéudvikling samt
+                procesdokumentation.
+                <br>
+                Derudover var det på dette tema, at vi blev introduceret til Figma, som vi skulle bruge til at lave
+                blandt andet moodboards og style tiles.
+                <br>
+                Derudover lærte vi også om forskellige typer af research såsom desktop research.
+            </p>
+
+            <div class="container gallery-container theme-gallery-container">
+                <div>
+                    <div class="overlay"></div>
+                    <img src="images/theme_three/figma_logo.webp" alt="figma logo">
+                    <h2>Figma</h2>
+                </div>
+
+                <div>
+                    <div class="overlay"></div>
+                    <img src="images/theme_three/desktop_research.webp" alt="desktop research">
+                    <h2>Desktop Research</h2>
+                </div>
+
+                <div>
+                    <div class="overlay"></div>
+                    <img src="images/theme_three/process_documentation_page_one.webp" alt="process documentation">
+                    <h2>procesdokumentation</h2>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section: Research, Idea & Process Documentation -->
+        <section class="research-idea-processdocumentation" id="research_idea_processdocumentation">
+            <header class="header section-header">
+                <h1>Research, idé og procesdokumentation</h1>
+            </header>
+
+            <div class="container section-content-container">
+                <div class="section-content">
+                    <div class="container assets-container">
+                        <div>
+                            <img src="images/theme_three/process_documentation_page_one.webp"
+                                alt="process documentation">
+                            <img src="images/theme_three/process_documentation_page_two.webp"
+                                alt="process documentation">
+                        </div>
+                    </div>
+                    <div class="container image-desc-container">
+                        <h2>Research, idé &amp; procesdokumentation</h2>
+                        <p>
+                            Her lærte vi om procesdokumentation, som er en form for rapport, man skriver undervejs i
+                            processen - heraf navnet.
+                            Den indeholder alt, hvad processen indebærer fra eventuelle kundeaftaler til færdig kode og
+                            alt derimellem. På dette tema lavet vi kun en meget nedskaleret udgave af den. Derudover
+                            lærte vi også om at udarbejde en idé til, hvad blandt andet angår brugervenlighed. Af
+                            researchtyper lærte vi blandt andet om desktop research,
+                            som er en researchmetode, hvor man går ud og finder nogle tilfælde, der kigger på ens side,
+                            og som så kommer med deres umiddelbare input. Dette brugte vi så til at lave
+                            ændringer/forbedringer til vores side.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <div class="container assets-container">
+                        <div>
+                            <img src="images/theme_three/prototype.webp" alt="process documentation">
+                            <img src="images/theme_three/lighthouse_test.webp" alt="process documentation">
+                        </div>
+                    </div>
+                    <div class="container image-desc-container">
+                        <h2>Prototyper og Lighthouse Tests</h2>
+                        <p>
+                            I denne del af temaet var fokus på primært to ting, nemlig (funktionel) prototype og
+                            lighthouse test. Formålet med at lave en prototype, som også var det, vi skulle bruge den
+                            til,
+                            var at have en minimalt fungerende hjemmeside, som udefrakommende så skulle kunne teste ved
+                            at navigere rundt på siden og komme med feedback på. Den måde, som denne adskiller sig fra
+                            desktop research på, er, at man allerede her har lavet en side, som kan testes, hvorimod man
+                            til desktop research indsamler information baseret på allerede eksisterende information, som
+                            man så kan bruge til sin side/sit produkt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section: Selectors -->
+        <section class="selectors" id="selectors">
+            <header class="header section-header">
+                <h1>Selektorer</h1>
+            </header>
+
+            <div class="container section-content-container">
+                <div class="section-content">
+                    <ul>
+                        <li>
+                            * <span>(universal)</span>
+                        </li>
+                        <li>
+                            . <span>class</span>
+                        </li>
+                        <li>
+                            # <span>(id)</span>
+                        </li>
+                        <li>
+                            element <span>(element)</span>
+                        </li>
+                        <li>
+                            element.class <span>(element kun med angivet klasse)</span>
+                        </li>
+                        <li>
+                            element#id <span>(element kun med angivet id)</span>
+                        </li>
+                        <li>
+                            element, element <span>(elementer af bestemte typer til ens styling)</span>
+                        </li>
+                        <li>
+                            element element <span>(element inde i et andet element)</span>
+                        </li>
+                        <li>
+                            element > element <span>(direkte barn)</span>
+                        </li>
+                        <li>
+                            * <span>(universal)</span>
+                        </li>
+                        <li>
+                            element + element <span>(direkte søskende)</span>
+                        </li>
+                        <li>
+                            :nth-child(n) <span>(alle børn specificeret af parameteret)</span>
+                        </li>
+                        <li>
+                            :root <span>(webdokumentets rodelement (her HTML-elementet))</span>
+                        </li>
+                    </ul>
+                    <div class="container image-desc-container">
+                        <h2>Selektorer</h2>
+                        <p>
+                            På denne del af temaet lærte temaet lærte vi om forskellige typer af CSS-selektorer på et
+                            lidt højere niveau.
+                            Dette skal forstås på den måde, at vi lærte om avancerede CSS-selektorer, hvis formål er at
+                            kunne have færre tilgåelsesattributter (klasser eller id'er), og stadigvæk have det samme
+                            udkom.
+                            Disse selektorer gør også ens kode mere dynamisk. Til venstre ses en liste over de fleste
+                            typer af selektorer, vi lærte på dette tema (med undtagelse af <em>:root</em>).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <h3>MMD 2023</h3>
+    </footer>
 </body>
 
 </html>

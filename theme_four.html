@@ -42,34 +42,234 @@
     </nav>
 
 
-    <section class="hero theme-hero theme-four-hero" id="theme_four_hero">
-        <div class="layer top-layer" id="top_layer">
-            <h1 class="header theme-header theme-four-header">TEMA #4</h1>
+    <main>
+        <!-- Section: Hero -->
+        <section class="hero theme-hero theme-four-hero" id="theme_four_hero">
+            <div class="layer top-layer" id="top_layer">
+                <h1 class="header theme-header theme-four-header">TEMA #4</h1>
 
-            <div class="container tap-screen-indicator-container">
-                <h3>Click</h3> <i class="fa-solid fa-arrow-pointer"></i>
+                <div class="container tap-screen-indicator-container">
+                    <h3>Click</h3> <i class="fa-solid fa-arrow-pointer"></i>
+                </div>
             </div>
-        </div>
-        <div class="layer bottom-layer" id="bottom_layer">
-            <h1 class="animation-header" id="animation_header">
-                <span>A</span>
-                <span>N</span>
-                <span>I</span>
-                <span>M</span>
-                <span>A</span>
-                <span>T</span>
-                <span>I</span>
-                <span>O</span>
-                <span>N</span>
-            </h1>
+            <div class="layer bottom-layer" id="bottom_layer">
+                <h1 class="theme-header animation-header" id="animation_header">
+                    <span class="animation-theme-header-letter">A</span>
+                    <span class="animation-theme-header-letter">N</span>
+                    <span class="animation-theme-header-letter">I</span>
+                    <span class="animation-theme-header-letter">M</span>
+                    <span class="animation-theme-header-letter">A</span>
+                    <span class="animation-theme-header-letter">T</span>
+                    <span class="animation-theme-header-letter">I</span>
+                    <span class="animation-theme-header-letter">O</span>
+                    <span class="animation-theme-header-letter">N</span>
+                </h1>
 
-            <div class="container video-container">
-                <div class="overlay"></div>
-                <video src="videos/theme_four_animation_header_bg.mp4" autoplay muted loop></video>
+                <div class="container video-container">
+                    <div class="overlay"></div>
+                    <video src="videos/theme_four_animation_header_bg.mp4" id="animation_header_video" muted
+                        loop></video>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Section: Overview -->
+        <section class="theme-four-overview" id="theme-four-overview">
+            <header class="header section-header">
+                <h1>Tema #4 - <span class="sub-text header-sub-text">Animation</span></h1>
+            </header>
+
+            <p class="text theme-overview-text">
+                På dette tema blev vi bekendt med begreber som papirprototyper, aktivitetsdiagrammer og
+                designprincipper.
+                <br>
+                Derudover lærte vi også om positionering og CSS-animationer (keyframes) samt blev introduceret til at
+                Illustrator.
+                <br>
+                Alt dette skulle bruges til det endelige resultat - et spil.
+            </p>
+
+            <div class="container gallery-container theme-gallery-container">
+                <div>
+                    <div class="overlay"></div>
+                    <img src="images/theme_four/activitydiagram.webp" alt="activity diagram">
+                    <h2>Aktivitetsdiagram</h2>
+                </div>
+
+                <div>
+                    <div class="overlay"></div>
+                    <img src="images/theme_four/state_machine_diagram.webp" alt="state machine diagram">
+                    <h2>State Machine Diagram</h2>
+                </div>
+
+                <div>
+                    <div class="overlay"></div>
+                    <img src="images/theme_four/keyframes.webp" alt="keyframes">
+                    <h2>Keyframes</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Activity Diagram & State Machine Diagram -->
+        <section class="activity-state-machine" id="activity_state_machine">
+            <header class="header section-header">
+                <h1>Aktivitets- og State Machine-diagrammer</h1>
+            </header>
+
+            <div class="container section-content-container">
+                <div class="section-content">
+                    <img src="images/theme_four/state_machine_diagram.webp" alt="state machine diagram">
+                    <div class="container image-desc-container">
+                        <h2>State Machine Diagram</h2>
+                        <p>
+                            En af de nye ting på dette tema var state machine-diagrammer, som er en måde at visualisere
+                            flowet i ens program på. Den måde, som vi brugte det på i forbindelse med vores spil, var
+                            ved at
+                            lave et diagram, der skridt for skridt tager brugeren fra start til slut gennem alle
+                            tænkelige
+                            udfald baseret på brugerens handlinger undervejs i spillet.
+                            Dette gav os erfaring med et brugbart værktøj, som vil gøre det nemmere at lave større
+                            opgaver i
+                            fremtiden ved at visualisere de mulige brugerscenarier.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <img src="images/theme_four/activitydiagram.webp" alt="activity diagram">
+                    <div class="container image-desc-container">
+                        <h2>Aktivitetsdiagram</h2>
+                        <p>
+                            Aktivitetsdiagrammet er andet værktøj, vi blev introduceret til på dette tema.
+                            I temaet her brugte vi det til at visualisere, hvad der sker, når brugeren interagerer med
+                            spillet.
+                            Klikkes der på en god ting, afspilles der en lyd af, at der er gjort noget korrekt og
+                            omvendt,
+                            hvis man klikker på en dårlig,
+                            spilles der en lyd af, at man har gjort noget forkert.
+                            <br>
+
+                            I almen praksis kan dette anvendes lidt på samme måde som state machine-diagrammet.
+                            Det, der dog adskiller de to, er, at state machine-diagrammet er (mere) kodenært, mens
+                            aktivitetsdiagrammet arbejder på et mere konceptuelt/principielt niveau.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Positioning & Keyframes -->
+        <section class="positioning-keyframes" id="positioning_keyframes">
+            <header class="header section-header">
+                <h1>Positionering og Animation</h1>
+            </header>
+
+            <div class="container section-content-container">
+                <div class="section-content">
+                    <img src="images/theme_four/positioning.webp" alt="state machine diagram">
+                    <div class="container image-desc-container">
+                        <h2>Positionering</h2>
+                        <p>
+                            Her lærte vi om position-attributten, som er et af de lidt mere abstrakte koncepter indenfor
+                            CSS.
+                            <br>
+                            Hvad den i bund og grund bruges til er at angive, hvor et barn er placeret i
+                            forhold til sin nærmeste forælder,
+                            <br>
+                            som ikke har sin position-attribut sat til <em>static</em>.
+                            Dette brugte vi i spillet i forhold til at placere elementer som liv, tid og figurer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <img src="images/theme_four/keyframes.webp" alt="activity diagram">
+                    <div class="container image-desc-container">
+                        <h2>Keyframes</h2>
+                        <p>
+                            Her lærte vi det, som var fundamentet for hele temaet, nemlig CSS-animationer. Til disse
+                            bruges
+                            keyframes,
+                            som fortæller, hvad der skal ske med et element i dets forskellige stadier af animationen.
+                            Den
+                            sættes op ved at tilføje
+                            en <b>animation</b> property til det element, man ønsker at animere, der så som værdi skal
+                            have
+                            navnet og længden på animationen, samt om den skal gentages eller stoppe efter en iteration.
+                            Til dette lærte vi også om JavaScript med henblik på at få os introduceret til det. Vi
+                            brugte
+                            eventlistenere som <em>animationiteration</em>, <em>animationstart</em> og
+                            <em>animationend</em>
+                            til at lytte efter animationerne og gøre ting på baggrund deraf.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Illustrator -->
+        <section class="illustrator" id="illustrator">
+            <header class="header section-header">
+                <h1>Illustrator</h1>
+            </header>
+
+            <div class="container section-content-container">
+                <div class="section-content">
+                    <div class="container assets-container">
+                        <div>
+                            <img src="images/theme_four/assets/bad_item.svg" alt="state machine diagram">
+                            <img src="images/theme_four/assets/good_item.svg" alt="state machine diagram">
+                        </div>
+                        <div>
+                            <img src="images/theme_four/assets/game_screen.svg" alt="state machine diagram">
+                            <img src="images/theme_four/assets/logo.svg" alt="state machine diagram">
+                        </div>
+                    </div>
+                    <div class="container image-desc-container">
+                        <h2>Assets</h2>
+                        <p>
+                            Det var under udarbejdelsen af vores spilassets, at vi for første gang på uddannelsen
+                            stiftede
+                            bekendtskab med Adobe Illustrator. Dette skulle vi til at tegne og manipulere billeder i,
+                            således vi kunne have nogle elementer at bruge i vores spil. Udover at sidde manuelt og
+                            designe
+                            alle vores assets fik vi at vide,
+                            at vi også gerne måtte bruge Illustrators indbyggede AI-værktøj til at generere elementer,
+                            hvilket jeg gjorde brug af til at lave min spilbaggrund og -logo. Mine resterede assets som
+                            blandt andet mit gode og dårlige element samt tid og liv lavede jeg manuelt i Illustrator.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <img src="images/theme_four/keyframes.webp" alt="activity diagram">
+                    <div class="container image-desc-container">
+                        <h2>Keyframes</h2>
+                        <p>
+                            Her lærte vi det, som var fundamentet for hele temaet, nemlig CSS-animationer. Til disse
+                            bruges
+                            keyframes,
+                            som fortæller, hvad der skal ske med et element i dets forskellige stadier af animationen.
+                            Den
+                            sættes op ved at tilføje
+                            en <b>animation</b> property til det element, man ønsker at animere, der så som værdi skal
+                            have
+                            navnet og længden på animationen, samt om den skal gentages eller stoppe efter en iteration.
+                            Til dette lærte vi også om JavaScript med henblik på at få os introduceret til det. Vi
+                            brugte
+                            eventlistenere som <em>animationiteration</em>, <em>animationstart</em> og
+                            <em>animationend</em>
+                            til at lytte efter animationerne og gøre ting på baggrund deraf.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <h3>MMD 2023</h3>
+    </footer>
 </body>
 
 </html>

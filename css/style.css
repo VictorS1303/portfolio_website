@@ -222,11 +222,13 @@ section.hero .container.slider-btns-container .btn:active
 }
 
 
-/* Theme #2 */
+/* Theme #4 */
 
 /* Section: Hero */
 section.hero
 {
+    position: relative;
+    top: -30px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -245,6 +247,7 @@ section.hero .layer.top-layer
 {
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    cursor: pointer;
     z-index: 1000;
 }
 
@@ -271,6 +274,7 @@ section.hero .layer.top-layer.hidden
 {
     opacity: 0;
     transition: opacity .3s ease-in;
+    pointer-events: none;
 }
 
 section.hero .layer.bottom-layer
@@ -289,64 +293,76 @@ section.hero h1:not(.slider-header)
     color: var(--secondary-color);
 }
 
-h1.animation-header>span
+h1.animation-header>span,
+h1.web-header>span,
+h1.content-header>span
 {
     position: relative;
     top: -20px;
     opacity: 0;
-    animation: fadeInDown .15s linear forwards;
+    animation: fadeInDown .5s linear forwards;
 }
 
-/* Delay Letters In Animation Header */
-h1.animation-header span:nth-child(1)
+/* Delay Letters In Header Animation */
+h1.animation-header span.animation-theme-header-letter:nth-child(1),
+h1.web-header span.web-theme-header-letter:nth-child(1),
+h1.content-header span.content-theme-header-letter:nth-child(1)
 {
     animation-delay: 0;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(2)
+h1.animation-header span.animation-theme-header-letter:nth-child(2),
+h1.web-header span.web-theme-header-letter:nth-child(2),
+h1.content-header span.content-theme-header-letter:nth-child(2)
 {
     animation-delay: .02s;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(3)
+h1.animation-header span.animation-theme-header-letter:nth-child(3),
+h1.web-header span.web-theme-header-letter:nth-child(3),
+h1.content-header span.content-theme-header-letter:nth-child(3)
 {
     animation-delay: .06s;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(4)
+h1.animation-header span.animation-theme-header-letter:nth-child(4),
+h1.content-header span.content-theme-header-letter:nth-child(4)
 {
     animation-delay: .08s;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(5)
+h1.animation-header span.animation-theme-header-letter:nth-child(5),
+h1.content-header span.content-theme-header-letter:nth-child(5)
 {
     animation-delay: .1s;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(6)
+h1.animation-header span.animation-theme-header-letter:nth-child(6),
+h1.content-header span.content-theme-header-letter:nth-child(6)
 {
     animation-delay: .12s;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(7)
+h1.animation-header span.animation-theme-header-letter:nth-child(7),
+h1.content-header span.content-theme-header-letter:nth-child(7)
 {
     animation-delay: .14s;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(8)
+h1.animation-header span.animation-theme-header-letter:nth-child(8)
 {
     animation-delay: .16s;
     animation-play-state: paused;
 }
 
-h1.animation-header span:nth-child(9)
+h1.animation-header span.animation-theme-header-letter:nth-child(9)
 {
     animation-delay: .18s;
     animation-play-state: paused;
@@ -359,6 +375,3 @@ h1.animation-header span:nth-child(9)
     transform: translateY(-50%);
     z-index: -10;
 }
-
-
-/* Footer */

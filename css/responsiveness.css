@@ -5,14 +5,13 @@
     .content.slide-content
     {
         max-width: 600px;
-
         border-radius: 0 calc(var(--base-border-radius) / 1.5) calc(var(--base-border-radius) / 1.5) 0;
     }
 
     /* Gallery */
     .container.gallery-container div h2
     {
-        top: 50%;
+        top: -50%;
     }
 
     .container.gallery-container div:hover h2
@@ -38,5 +37,39 @@
     {
         font-size: 20px;
         z-index: 10;
+    }
+
+    /* Section Content */
+    .container.section-content-container>div
+    {
+        flex-direction: row;
+    }
+
+
+    .image-desc-container
+    {
+        margin-top: -100px;
+    }
+
+
+    .container.section-content-container .section-content:nth-child(odd) .image-desc-container
+    {
+        text-align: right;
+    }
+
+    .container.section-content-container .section-content:nth-child(even) .image-desc-container
+    {
+        text-align: left;
+    }
+
+
+    .container.section-content-container .section-content:nth-child(even) .image-desc-container
+    {
+        order: -1;
+    }
+
+    .container.section-content-container .study-start-content
+    {
+        text-align: center;
     }
 }

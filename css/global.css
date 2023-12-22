@@ -13,9 +13,15 @@
 /* Body */
 body
 {
+    min-height: 100vh;
     background-color: var(--body-background-color);
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+section
+{
+    min-height: 100vh
 }
 
 /* List Elements */
@@ -68,3 +74,7 @@ video
     object-fit: cover;
 }
 
+code
+{
+    font-size: 16px;
+}
