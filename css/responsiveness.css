@@ -16,6 +16,11 @@
         border-bottom: 3px solid var(--primary-border-color);
     }
 
+    nav.main-nav img
+    {
+        display: none;
+    }
+
     nav.main-nav ul
     {
         position: relative;
