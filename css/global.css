@@ -19,9 +19,35 @@ body
     scroll-behavior: smooth;
 }
 
+/* Section */
 section
 {
-    min-height: 100vh
+    min-height: 100vh;
+    text-align: center;
+}
+
+section:nth-child(even),
+section:nth-child(even) header
+{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+section:nth-child(odd),
+section:nth-child(odd) header
+{
+    color: var(--secondary-color);
+}
+
+section:nth-child(odd):not(:first-child)
+{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+section:nth-child(odd):not(:first-child) header.header
+{
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /* List Elements */
@@ -49,19 +75,22 @@ header, h1, h2, h3, h4, h5, h6
     font-family: var(--headings-font);
 }
 
+/* All headers except the h1 with the class of "slider-header" */
+h1:not(.slider-header)
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    white-space: nowrap;
+    color: var(--secondary-color);
+}
+
 /* Paragraphs */
 p
 {
     font-family: var(--paragraphs-font);
-}
-
-/* Section */
-
-/* All Sections */
-section
-{
-    min-height: 100vh;
-    text-align: center;
 }
 
 /* Images & Videos */

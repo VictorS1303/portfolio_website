@@ -16,8 +16,6 @@
         border-bottom: 3px solid var(--primary-border-color);
     }
 
-
-
     nav.main-nav ul
     {
         position: relative;
@@ -33,7 +31,6 @@
     {
         margin-right: 40px;
     }
-
 
     /* Slider */
     .content.slide-content
@@ -79,12 +76,21 @@
         flex-direction: row;
     }
 
+    /* Section Header */
+    .section-header h1
+    {
+        font-size: 2rem;
+    }
 
     .image-desc-container
     {
         margin-top: -100px;
     }
 
+    .container.section-content-container .section-content.study-start-content .image-desc-container
+    {
+        order: 1;
+    }
 
     .container.section-content-container .section-content:nth-child(odd) .image-desc-container
     {
@@ -96,14 +102,14 @@
         text-align: left;
     }
 
-
     .container.section-content-container .section-content:nth-child(even) .image-desc-container
     {
         order: -1;
     }
 
-    .container.section-content-container .study-start-content
+    /* Selectors' list */
+    .container.section-content-container ul li
     {
-        text-align: center;
+        flex-direction: row;
     }
 }

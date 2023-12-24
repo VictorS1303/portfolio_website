@@ -3,10 +3,9 @@ const mainNav = document.getElementById('main_nav')
 const scrollToTopBtn = document.getElementById('scroll_to_top_btn')
 
 const topLayer = document.getElementById('top_layer')
-const animationHeaderSpans = document.querySelectorAll('.animation-header > span')
-const webHeaderSpans = document.querySelectorAll('.web-header > span')
-const contentHeaderSpans = document.querySelectorAll('.content-header > span')
+const themeHeaderLetters = document.querySelectorAll('.theme-header-letter')
 const animationHeaderVideo = document.getElementById('animation_header_video')
+console.log(themeHeaderLetters)
 
 
 // EVENT LISTENERS //
@@ -54,31 +53,12 @@ function hideTopLayer()
 function runHeaderAnimation()
 {
     // Looping through each span inside the header
-    animationHeaderSpans.forEach((animationHeaderSpan) =>
+    themeHeaderLetters.forEach((themeHeaderLetter) =>
     {
-        // Set the play state of each span 'running' 500ms after the top layer has been hidden
+        // Let the header letter animation wait to kick in until 500ms after the top layer has been removed
         setTimeout(() =>
         {
-            animationHeaderSpan.style.animationPlayState = 'running'
-        }, 500)
-    })
-
-
-    webHeaderSpans.forEach((webHeaderSpan) =>
-    {
-        // Set the play state of each span 'running' 500ms after the top layer has been hidden
-        setTimeout(() =>
-        {
-            webHeaderSpan.style.animationPlayState = 'running'
-        }, 500)
-    })
-
-    contentHeaderSpans.forEach((contentHeaderSpan) =>
-    {
-        // Set the play state of each span 'running' 500ms after the top layer has been hidden
-        setTimeout(() =>
-        {
-            contentHeaderSpan.style.animationPlayState = 'running'
+            themeHeaderLetter.style.animationPlayState = 'running'
         }, 500)
     })
 }
