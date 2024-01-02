@@ -8,6 +8,8 @@
     --headings-font: 'Oswald', sans-serif;
     --paragraphs-font: 'Open Sans', sans-serif;
     --links-font: 'Open Sans', sans-serif;
+    --primary-color: #008080;
+    --secondary-color: #fff;
     --primary-btn-color: #008080;
     --primary-btn-background-color: #fff;
     --primary-btn-hover-overlay-color: #008080;
@@ -393,6 +395,17 @@ section p.theme-overview-text
     padding: 0 40px;
 }
 
+.section-content
+{
+    margin: 0 40px;
+    gap: 40px;
+}
+
+.section-content:nth-child(even)
+{
+    margin-top: 100px;
+}
+
 .section-content.study-start-content .image-desc-container
 {
     order: -1;
@@ -404,8 +417,7 @@ section p.theme-overview-text
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    padding: 40px;
+    gap: 20px;
 }
 
 

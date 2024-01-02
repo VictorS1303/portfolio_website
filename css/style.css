@@ -178,22 +178,22 @@ section.hero .container.slider-container
 
 .slide:nth-child(1)
 {
-    background-image: url('../images/index_images/slider/theme_two.webp');
+    background-image: url('../images/theme_overview/slider/theme_two.webp');
 }
 
 .slide:nth-child(2)
 {
-    background-image: url('../images/index_images/slider/theme_three.webp');
+    background-image: url('../images/theme_overview/slider/theme_three.webp');
 }
 
 .slide:nth-child(3)
 {
-    background-image: url('../images/index_images/slider/theme_four.webp');
+    background-image: url('../images/theme_overview/slider/theme_four.webp');
 }
 
 .slide:nth-child(4)
 {
-    background-image: url('../images/index_images/slider/theme_five.webp');
+    background-image: url('../images/theme_overview/slider/theme_five.webp');
 }
 
 section.hero .container.slider-btns-container
@@ -218,6 +218,11 @@ h1.content-header>span
     top: -20px;
     opacity: 0;
     animation: fadeInDown .5s linear forwards;
+}
+
+.theme-header .theme-header-letter
+{
+    font-size: 5rem;
 }
 
 /* Delay Letters In Header Animation */
@@ -316,4 +321,81 @@ h1.content-header>span
 {
     display: flex;
     justify-content: space-between;
+}
+
+/* Index Page */
+/* Section: Hero */
+section.about-hero
+{
+    min-height: 100vh;
+    background-image: url('../images/index_images/about_hero_bg.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+section.about-hero .container.desc-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.about-hero .container.desc-container h1
+{
+    font-size: 2rem;
+}
+
+section.hero span
+{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+section.hero i.fas.fa-arrow-down
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    color: var(--secondary-color);
+    font-size: 30px;
+    animation: upDown .75s linear infinite;
+}
+
+/* Section: Who, What & Where  */
+.container.about-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.title
+{
+    margin-top: 2px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+section.about .section-content img
+{
+    height: 100%;
+    width: 100%;
+}
+
+section.about p span
+{
+    border-bottom: 2px dashed var(--primary-color);
+    cursor: pointer;
+}
+
+section.about p span:hover
+{
+    border-bottom-style: solid;
 }

@@ -1,18 +1,28 @@
 const mobileMenuToggleBtn = document.getElementById('mobile_menu_toggle_btn')
 const mainNav = document.getElementById('main_nav')
 const scrollToTopBtn = document.getElementById('scroll_to_top_btn')
-
-const topLayer = document.getElementById('top_layer')
 const themeHeaderLetters = document.querySelectorAll('.theme-header-letter')
 const animationHeaderVideo = document.getElementById('animation_header_video')
-console.log(themeHeaderLetters)
+const typeWriterWordElement = document.querySelector('.typewriter-word')
+const whereWhatWhoImage = document.getElementById('where_what_who_image')
+const whereWhatWhoImageTitle = document.getElementById('where_what_who_image_title')
+const spareTimeImage = document.getElementById('spare_time_image')
+const spareTimeImageTitle = document.getElementById('spare_time_image_title')
+
+const whereWhatWhoImageDescContainer = document.getElementById('where_what_who_image_desc_container')
+const spareTimeImageDescContainer = document.getElementById('spare_time_image_desc_container')
+
+const imageTitle = document.getElementById('image_title')
 
 
 // EVENT LISTENERS //
 window.addEventListener('scroll', toggleScrollToTopBtn)
 scrollToTopBtn.addEventListener('click', scrollToTop)
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
-topLayer.addEventListener('click', hideTopLayer)
+whereWhatWhoImageDescContainer.addEventListener('click', (e) => updateWhereWhatWhoImage(e))
+spareTimeImageDescContainer.addEventListener('click', (e) => updateSpareTimeImage(e))
+
+
 
 // FUNCTIONS //
 
@@ -32,36 +42,6 @@ function updateMobileMenuToggleIcon()
         : (mobileMenuToggleBtn.classList.add('fa-bars'), mobileMenuToggleBtn.classList.remove('fa-times'))
 }
 
-// Hide Top Layer
-function hideTopLayer()
-{
-    // Add hidden class to top layer
-    topLayer.classList.add('hidden')
-
-    // Check if top layer contains the class of 'hidden'
-    if (topLayer.classList.contains('hidden'))
-    {
-        // Call the runHeaderAnimation function
-        runHeaderAnimation()
-
-        // Play Background Video
-        animationHeaderVideo.play()
-    }
-}
-
-// Run Header Animation
-function runHeaderAnimation()
-{
-    // Looping through each span inside the header
-    themeHeaderLetters.forEach((themeHeaderLetter) =>
-    {
-        // Let the header letter animation wait to kick in until 500ms after the top layer has been removed
-        setTimeout(() =>
-        {
-            themeHeaderLetter.style.animationPlayState = 'running'
-        }, 500)
-    })
-}
 
 
 // Toggle Scroll To Top Btn
@@ -77,3 +57,35 @@ function scrollToTop()
 {
     window.scrollTo(0, 0)
 }
+
+
+// Update Who, What & Where Image
+function updateWhereWhatWhoImage(e)
+{
+    const imageTitle = e.target.dataset.sparetime
+
+    if (e.target.matches('span'))
+    {
+        whereWhatWhoImage.src = `../images/index_images/${e.target.dataset.location}.webp`
+        whereWhatWhoImage.alt = `../images/index_images/${e.target.dataset.location}.webp`
+        whereWhatWhoImageTitle.textContent = e.target.dataset.location
+
+        whereWhatWhoImageTitle.textContent = imageTitle.charAt(0).toUpperCase() + imageTitle.slice(1);
+    }
+}
+
+// // Update Spare Time Image
+function updateSpareTimeImage(e)
+{
+    const imageTitle = e.target.dataset.sparetime
+
+    if (e.target.matches('span'))
+    {
+        spareTimeImage.src = `../images/index_images/${e.target.dataset.sparetime}.webp`
+        spareTimeImage.alt = `../images/index_images/${e.target.dataset.sparetime}.webp`
+        spareTimeImageTitle.textContent = e.target.dataset.sparetime
+
+        spareTimeImageTitle.textContent = imageTitle.charAt(0).toUpperCase() + imageTitle.slice(1);
+    }
+}
+

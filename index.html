@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/responsiveness.css">
+    <link rel="stylesheet" href="css/animations.css">
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
     <title>Portfolio | Hjem</title>
@@ -40,6 +41,89 @@
             </li>
         </ul>
     </nav>
+
+    <!-- Section: Hero -->
+    <section class="hero about-hero" id="about_hero">
+        <div class="overlay"></div>
+
+        <div class="container desc-container">
+            <h1>
+                Victor Schweitz
+            </h1>
+            <span>
+                MMD-studerende
+            </span>
+        </div>
+
+        <i class="fas fa-arrow-down"></i>
+    </section>
+
+    <a href="#section_two">
+        <i class="fa-solid fa-arrow-up btn scroll-to-top-btn" id="scroll_to_top_btn"></i>
+    </a>
+
+
+    <!-- Section: About -->
+    <section class="about" id="about">
+        <header class="header section-header">
+            <h1>Hvem, Hvad &amp; Hvor</h1>
+        </header>
+
+        <div class="container section-content-container">
+            <!-- Section #1 -->
+            <div class="section-content">
+                <div class="container about-container">
+                    <img src="images/theme_two/company_card.webp" id="where_what_who_image" alt="">
+                    <p class="title image-title" id="where_what_who_image_title"></p>
+                </div>
+
+                <div class="container image-desc-container" id="where_what_who_image_desc_container">
+                    <h2>Hvem, Hvad &amp; Hvor</h2>
+                    <p>
+                        Mit navn er Victor Schweitz, og jeg er født i <span
+                            data-location="pennsylvania">Pennsylvania</span>,
+                        USA, den 13. marts
+                        2000.
+                        Her boede jeg, til jeg i slutningen af 2001 flyttede tilbage til Danmark. Her er jeg vokset op i
+                        <span data-location="hilleroed">Hillerød</span> sammen med mine forældre og lillesøster, hvor
+                        jeg både har gået i <span data-location="folkeskole">folkeskole</span>
+                        (dimitterede 2016) og <span data-location="gymnasium">gymnasie</span> (dimitterede 2019).
+                        I 2020 gik jeg på <span data-location="vallekilde">Vallekilde Højskole</span> på
+                        spiludviklingslinjen. I 2021 startede jeg på
+                        datamatikeren på <span data-location="kea">KEA</span>, som jeg droppede ud af i februar 2023,
+                        hvor jeg til august samme år startede på MMD sammesteds.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Section #2 -->
+            <div class="section-content">
+                <div class="container spare-time-container">
+                    <img src="images/index_images/kode.webp" id="spare_time_image" alt="">
+                    <p class="title image-title" id="spare_time_image_title"></p>
+                </div>
+
+                <div class="container image-desc-container" id="spare_time_image_desc_container">
+                    <h2>Fritid</h2>
+                    <p>
+                        I min fritid elsker jeg at cykle ture <span data-sparetime="cykel">cykle</span> ture (gerne
+                        udendørs, når vejret er til det). Når jeg ikke cykler, elsker jeg at være sammen med vennerne,
+                        <span data-sparetime="kode">kode</span> eller spille <span
+                            data-sparetime="klaver">klaver</span>.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <h3>MMD 2023</h3>
+    </footer>
+
 </body>
 
 </html>
