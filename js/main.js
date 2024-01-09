@@ -67,8 +67,8 @@ function updateWhereWhatWhoImage(e)
 
     if (e.target.matches('span'))
     {
-        whereWhatWhoImage.src = `../images/index_images/${e.target.dataset.location}.webp`
-        whereWhatWhoImage.alt = `../images/index_images/${e.target.dataset.location}.webp`
+        whereWhatWhoImage.src = `images/index_images/${e.target.dataset.location}.webp`
+        whereWhatWhoImage.alt = `images/index_images/${e.target.dataset.location}.webp`
         whereWhatWhoImageTitle.textContent = e.target.dataset.location
     }
 }
@@ -80,8 +80,8 @@ function updateSpareTimeImage(e)
 
     if (e.target.matches('span'))
     {
-        spareTimeImage.src = `../images/index_images/${e.target.dataset.sparetime}.webp`
-        spareTimeImage.alt = `../images/index_images/${e.target.dataset.sparetime}.webp`
+        spareTimeImage.src = `images/index_images/${e.target.dataset.sparetime}.webp`
+        spareTimeImage.alt = `images/index_images/${e.target.dataset.sparetime}.webp`
         spareTimeImageTitle.textContent = e.target.dataset.sparetime
     }
 }
