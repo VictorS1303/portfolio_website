@@ -399,3 +399,9 @@ section.about p span:hover
 {
     border-bottom-style: solid;
 }
+
+#where_what_who_image_title,
+#spare_time_image_title
+{
+    text-transform: capitalize;
+}

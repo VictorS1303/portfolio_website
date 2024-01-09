@@ -23,7 +23,6 @@ scrollToTopBtn.addEventListener('click', scrollToTop)
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 whereWhatWhoImageDescContainer.addEventListener('click', (e) => updateWhereWhatWhoImage(e))
 spareTimeImageDescContainer.addEventListener('click', (e) => updateSpareTimeImage(e))
-downloadLinks.forEach((downloadLink) => downloadLink.addEventListener('click', displayFileDownloadMessage))
 
 
 // FUNCTIONS //
@@ -71,8 +70,6 @@ function updateWhereWhatWhoImage(e)
         whereWhatWhoImage.src = `../images/index_images/${e.target.dataset.location}.webp`
         whereWhatWhoImage.alt = `../images/index_images/${e.target.dataset.location}.webp`
         whereWhatWhoImageTitle.textContent = e.target.dataset.location
-
-        whereWhatWhoImageTitle.textContent = imageTitle.charAt(0).toUpperCase() + imageTitle.slice(1);
     }
 }
 
@@ -86,13 +83,5 @@ function updateSpareTimeImage(e)
         spareTimeImage.src = `../images/index_images/${e.target.dataset.sparetime}.webp`
         spareTimeImage.alt = `../images/index_images/${e.target.dataset.sparetime}.webp`
         spareTimeImageTitle.textContent = e.target.dataset.sparetime
-
-        spareTimeImageTitle.textContent = imageTitle.charAt(0).toUpperCase() + imageTitle.slice(1);
     }
-}
-
-// Display File Download Message
-function displayFileDownloadMessage()
-{
-    console.log('File is downloading')
 }
