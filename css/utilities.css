@@ -55,6 +55,7 @@ html
 /* Buttons */
 .btn
 {
+    border-style: solid;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -80,6 +81,7 @@ html
 .primary-btn,
 .secondary-btn
 {
+
     margin: -50px 0 50px 0;
     width: 150px;
 }
@@ -99,6 +101,7 @@ html
 /* Primary Button */
 .primary-btn
 {
+    border-bottom-style: solid;
     border: 2px solid var(--secondary-btn-background-color);
     color: var(--primary-btn-color);
     background-color: var(--primary-btn-background-color);
@@ -130,6 +133,7 @@ html
 /* Secondary Button */
 .secondary-btn
 {
+    border-bottom-style: solid;
     border: 2px solid var(--secondary-btn-hover-overlay-color);
     color: var(--secondary-btn-color);
     background-color: var(--secondary-btn-background-color);
@@ -311,6 +315,22 @@ section:nth-child(even) .section-header h1
 .section-header:nth-child(odd) h1
 {
     color: var(--secondary-btn-hover-overlay-color);
+}
+
+section:nth-child(odd) a:not(.primary-btn, .secondary-btn)
+{
+    border-bottom: 2px dashed var(--primary-color);
+}
+
+section:nth-child(even):not(.primary-btn, .secondary-btn) a
+{
+    border-bottom: 2px dashed var(--secondary-color);
+}
+
+section:nth-child(odd) a:hover,
+section:nth-child(even) a:hover
+{
+    border-bottom-style: solid;
 }
 
 section header.header.section-header span.sub-text

@@ -14,6 +14,8 @@ const spareTimeImageDescContainer = document.getElementById('spare_time_image_de
 
 const imageTitle = document.getElementById('image_title')
 
+const downloadLinks = document.querySelectorAll('.download-link')
+
 
 // EVENT LISTENERS //
 window.addEventListener('scroll', toggleScrollToTopBtn)
@@ -21,7 +23,7 @@ scrollToTopBtn.addEventListener('click', scrollToTop)
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 whereWhatWhoImageDescContainer.addEventListener('click', (e) => updateWhereWhatWhoImage(e))
 spareTimeImageDescContainer.addEventListener('click', (e) => updateSpareTimeImage(e))
-
+downloadLinks.forEach((downloadLink) => downloadLink.addEventListener('click', displayFileDownloadMessage))
 
 
 // FUNCTIONS //
@@ -89,3 +91,8 @@ function updateSpareTimeImage(e)
     }
 }
 
+// Display File Download Message
+function displayFileDownloadMessage()
+{
+    console.log('File is downloading')
+}
